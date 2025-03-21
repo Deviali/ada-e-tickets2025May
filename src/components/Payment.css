@@ -1,0 +1,278 @@
+.payment {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  position: relative;
+}
+
+.payment-container {
+  backdrop-filter: blur(28px);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-info-gather {
+  z-index: 1;
+  height: 80%;
+  width: 70%;
+  background-color: #F9FAFB;
+  border-radius: 20px;
+  overflow-y:auto;
+}
+
+.payment-cross {
+  position: absolute;
+  width: 68%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.payment-cross-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #737373;
+  background-color: #E0E0E066;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+.payment-form-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.payment-flex ,.payment-form-columns {
+  display: flex;
+  justify-content: space-around;
+  align-items:flex-start;
+  flex-wrap: wrap;
+}
+.payment-flex h1{
+  margin-bottom: 0;
+}
+
+.payment-form-col {
+  width: 30%;
+  height: 100%;
+}
+
+.form-gather {
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.gather {
+  width: 100%;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  padding-left: 5%;
+  gap: 22px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  width: 105%;
+}
+
+.country-code {
+  width: 40%;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  padding: 0 5%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
+
+.country-code option {
+  display: flex;
+  align-items: center;
+}
+
+.warning {
+  background-color: white;
+  padding: 5%;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+.warning-icon {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 5%;
+  background-color: var(--color-red);
+  border-radius: 50%;
+  padding: 0.25rem 0.75rem;
+}
+
+.warning-info p {
+  margin: 0;
+}
+
+.file-upload {
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5%;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.file-upload.drag-active {
+  background-color: #f0f0f0;
+}
+
+.file-input {
+  display: none;
+}
+
+.file-label {
+  display: block;
+  cursor: pointer;
+}
+
+.file-label img {
+  width: 10%;
+  height: auto;
+  max-width: 32px;
+}
+
+.submit-button {
+  background-color: var(--color-purple);
+  color: white;
+  margin-top: 1rem;
+  padding: 5% 10%;
+  border: none;
+  cursor: pointer;
+  width: 110%;
+  border-radius: 12px;
+  gap: 8px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button:hover {
+  background-color: #5a3de6;
+}
+
+.submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.loading-bar {
+  width: 50%;
+  height: 20%;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  overflow: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-bar-progress {
+  width: 0;
+  height: 100%;
+  background-color: var(--color-purple);
+  animation: loading 2s infinite;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+.file-cross-icon {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #737373;
+  background-color: #E0E0E066;
+  border-radius: 50%;
+  padding: 0.3rem;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.file-upload .loading-bar {
+  width: 50%;
+  height: 10%;
+  background-color: #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 950px) {
+  .payment-cross {
+    width: 90%;
+    margin-top: 1.5rem;
+  }
+  .payment-info-gather {
+    width: 95%;
+    height: 95%;
+  }
+
+  .payment-form-container {
+    padding: 2%;
+  }
+
+  .payment-form-columns {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .payment-form-col {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .form-gather {
+    width: 75%;
+  }
+
+  .country-code {
+    width: 30%;
+  }
+
+  .warning {
+    max-width: 100%;
+  }
+
+  .file-upload {
+    max-width: 100%;
+  }
+
+  
+}

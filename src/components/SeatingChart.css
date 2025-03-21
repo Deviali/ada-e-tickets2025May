@@ -1,0 +1,229 @@
+.screen-container {
+  text-align: center;
+  padding: 20px;
+  position: relative; /* For absolute positioning of overlay */
+}
+.screen-container svg{
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Overlay for Header and Cart */
+.overlay {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  z-index: 10;
+  padding: 10px 10rem;
+  border-radius: 20px;
+}
+.gray-line-chart{
+  border: 2px solid #858585;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+/* Event Header */
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-bottom: 20px;
+  width: 100%;
+  text-align: left;
+
+}
+.event-details,.event-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.h_chart{
+  font-family: 'Kanit';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0%;
+  color: #0C0C16;
+}
+.p_chart{
+  font-family: 'Kanit';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--color-gray);
+
+}
+.event-info {
+  text-align: right;
+}
+
+.event-date {
+  margin-bottom: 5px;
+}
+
+/* Price Legend */
+.price-legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.view-toggle {
+  width: 92px;
+  height: 44px;
+  border-radius: 40px;
+  background-color: var(--color-purple);
+  border: none;
+  color: white;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.not-visible{
+  visibility: hidden;
+}
+.price-indicators {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.price-circle {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 72px;
+  height: 38px; 
+  border-radius: 40px;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  text-transform: capitalize;
+  color: #0C0C16;
+  background-color: #FFFFFF;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.purple {
+  background-color: #5C4B99;
+}
+
+.yellow {
+  background-color: #FFC107;
+}
+
+.green {
+  background-color: #28A745;
+}
+
+.red {
+  background-color: #DC3545;
+}
+
+.price-indicators span {
+  font-size: 14px;
+}
+
+/* Cart */
+#cart {
+  text-align: left;
+  background-color: #FFFFFF;
+  border-radius: 40px;
+  padding: 0.5rem 2rem 1rem 2rem;
+}
+#cart ul {
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+.cart-buttons{
+  display: flex;
+  justify-content: space-between;
+}
+.proceed-button {
+  background-color: var(--color-purple);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: all ease 0.5s;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.proceed-button:hover {
+  background-color: #1B1B1D;
+}
+
+/* Existing styles (kept as-is) */
+.label,
+.label-2 {
+  text-anchor: middle;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0C0C16;
+}
+
+.seat {
+  cursor: pointer;
+}
+.seat.pending {
+  cursor: not-allowed;
+}
+.seat.reserved {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.seat.selected {
+  filter: brightness(0.1);
+}
+.label-2{
+  font-family: 'Lato';
+font-weight: 700;
+font-size: 28px;
+line-height: 38px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+
+}
+.label {
+  font-family: 'Kanit';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  letter-spacing: 0%;
+  /* vertical-align:top; */
+  text-transform: capitalize;
+  fill: white;
+}

@@ -1,0 +1,127 @@
+.admin-panel {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-login {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .admin-login h2 {
+    margin-bottom: 20px;
+  }
+  
+  .admin-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .admin-login input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .admin-login button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .admin-login button:hover {
+    background-color: #45a049;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  .submission-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  .submission-table th,
+  .submission-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .submission-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  .submission-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .submission-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .submission-table a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .submission-table a:hover {
+    text-decoration: underline;
+  }
+  
+  .accept-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .accept-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .reject-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  .reject-btn:hover {
+    background-color: #da190b;
+  }
+  
+  .admin-panel svg {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+  }
+  
+  .seat {
+    cursor: pointer;
+  }
+  
+  .seat.reserved {
+    opacity: 0.5;
+  }
+  
+  .seat.pending {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
