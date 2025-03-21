@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3448871a.css",
+    "main.js": "/static/js/main.387ab004.js",
+    "static/media/backgroundLanding.png": "/static/media/backgroundLanding.4bd1cbbb0b757080905e.png",
+    "static/media/backgroundLandingDark.png": "/static/media/backgroundLandingDark.66065e655cc250c49c42.png",
+    "static/media/Adavisionchampionslogo.png": "/static/media/Adavisionchampionslogo.3b7c378dedc11e628755.png",
+    "index.html": "/index.html",
+    "static/media/Upload.svg": "/static/media/Upload.3a08311c91326e37330970706aaf37b6.svg",
+    "main.3448871a.css.map": "/static/css/main.3448871a.css.map",
+    "main.387ab004.js.map": "/static/js/main.387ab004.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3448871a.css",
+    "static/js/main.387ab004.js"
+  ]
+}
